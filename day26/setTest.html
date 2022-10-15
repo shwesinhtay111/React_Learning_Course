@@ -1,0 +1,33 @@
+<html>
+    <script>
+        let arr = [1,1,2,3,4,5,5];
+        let set = new Set(arr);
+        let arrToDelete = [1,2,3];
+        set.add(5);
+        set.add(6);
+        set.add(arrToDelete)
+        set.delete(arrToDelete);
+        // all items remove
+        // set.clear();
+
+        // has() - check both type and value
+        console.log("is exist?",set.has(1))
+        console.log("array value => ",set,"set size",set.size);
+        let strTest = new Set("ShweHtayHtay")
+        // can delete one letter in string
+        strTest.delete("S");
+        console.log("string test => ",strTest);
+
+        // Set is iterable - can use let,of
+        for(let e of set){
+            console.log("set array items=> " + e)
+        }
+
+        // Set can destructure by using array spread operator
+        let arrSet =[...set];
+        console.log("Change Set to Array => ", arrSet);
+
+        // Set can use forEach
+        set.forEach(i=>console.log("foreach set item=>",i))
+    </script>
+</html>

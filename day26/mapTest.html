@@ -1,0 +1,55 @@
+<html>
+    <script>
+        // save as key,vale pair
+        let map = new Map([
+            ["user1","Admin"],
+            ["user2","User"]
+        ]);
+        console.log("Map", map)
+
+        // mainly use in the case where get value by key
+        // key must be unique in Map
+        // Object can use as Map
+        let obj = {
+            name:"Shwe Sin",
+            age:25
+        };
+        let mapTest =new Map(Object.entries(obj))
+        console.log("Object map=>", mapTest);
+
+        // Map has set method -to update value by key
+        map.set("user1","SuperAdmin")
+        console.log("Updated Map", map)
+        console.log("mag.get=>",map.get("user1"));
+        console.log("map.has=>",map.has("user1"));
+        console.log("map.size=>",map.size);
+        console.log("map.delete=>",map.delete("user1"));
+        // console.log("map.clear,all remove=>",map.clear())
+
+        let objTest = {
+            toString(){
+                console.log('To string called');
+                return "hello";
+            }
+        }
+        map.set(objTest,4);
+        console.log("map obj =>",map);
+        map.set({},6)
+        console.log("Map.get=>", map.get(objTest));
+        console.log("To string Updated Map", map);
+
+        // Iterable
+        for(let [key,value] of map){
+            console.log("Key=>",key,"Value=>",value);
+        }
+
+        // forEach
+        map.forEach((value,key) => {
+            console.log("Key :",key,"Value :",value);
+        })
+        console.log("All keys",map.keys());
+        console.log("All keys change to array with spread operator",[...map.keys()]);
+        console.log("All values",map.values());
+        console.log("All enteries,key and vlaue",map.entries());
+    </script>
+</html>

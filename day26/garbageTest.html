@@ -1,0 +1,16 @@
+<html>
+    <button type="button" id="btnCollect">bUTTON</button>
+        
+    <script>
+        // arr -stack variable
+        // new Array(10000000) - save in Heap
+        // Now, not garbage
+       let arr = new Array(10000000);
+       document.getElementById("btnCollect").addEventListener("click",()=>{
+        // make obj garbage 
+            arr=null;
+       })
+    // make garbage collection by snashot in browser
+
+    </script>
+</html>
