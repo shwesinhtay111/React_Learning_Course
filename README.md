@@ -49,6 +49,20 @@ Buffer - can use typed array and use same memory location
 --------------------------------------------------------------------------------------
 
 
+#D27
+
+Standard Library
+
+Little endian and big endian -c++ little endian , java big endian
+
+DataView -use to solve between little endian and big endian,not use in daily programming
+
+Pattern Matching(regular expression) - use in daily programming,use in web scraping
+
+web scraping - use from other side data to own, is leagal? from robot of their side can see allow or not
+
+ref : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet?fbclid=IwAR2FqzJWeaIxjuMAmcTSeA695h_zIiI0PP3xQLlRVYQFA6NkHKvm00iroxI
 
 
+--------------------------------------------------------------------------------------
 
