@@ -8,9 +8,9 @@
         bytes[0] = 1;
         bytes[1] =2;
         let view = new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);
-        let intData = view.getInt32(0);
+        let intData = view.getInt8(0);
         console.log("view result : ", intData);
-        intData = view.getInt32(0,true);
+        intData = view.getInt8(0,true);
         console.log("view result after : ", intData);
     </script>
 </html>

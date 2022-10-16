@@ -1,0 +1,44 @@
+<html>
+    <script>
+        // email
+        // username@website.com
+        // use regular expression to check 
+
+        // start with / and end with / -regular exp written format
+        // s$ means end with s
+        // i means casesensive accept
+        let pattern = /s$/i;
+        console.log("str starts","stars".match(pattern));
+        console.log("starts",pattern.test("starts"));
+        console.log("starts casesensitive :",pattern.test("startS"));
+        
+        // ^ start letter check
+        pattern = /^Java/i;
+        console.log("Java:",pattern.test("Java"));
+        console.log("JavaScript:",pattern.test("JavaScript"));
+
+        // . means any character, * means zero or more
+        pattern = /^Java.*/i;
+        console.log("Java sss:",pattern.test("Java sss"));
+        console.log("JavaScript bbb:",pattern.test("JavaScript bbb"));
+
+
+        // . means any character,+ means one or more
+        pattern = /^Java.+/i;
+        console.log("/^Java.+/i,Java:",pattern.test("Java"));
+        console.log("JavaScript bbb:",pattern.test("JavaScript bbb"));
+
+        // . means any character,? means zero or one,$ means end
+        pattern = /^Java.?$/i;
+        console.log("Java:",pattern.test("Java"));
+        console.log("Java1:",pattern.test("Java1"));
+        console.log("JavaScript bbb:",pattern.test("JavaScript bbb"));
+
+        // . means any character,{3,5} accept from 3 to 5 and more
+        pattern = /^Javab{3,5}/i;
+        console.log("/^Javab{3,5}}/i Java:",pattern.test("Javasssss"));
+        console.log("/^Javab{3,5}}/i Java1:",pattern.test("Javabbbbbbbb"));
+        console.log("/^Javab{3,5}}/i JavaScript bbb:",pattern.test("Javabbbbbbb"));
+
+    </script>
+</html>
