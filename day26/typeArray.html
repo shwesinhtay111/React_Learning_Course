@@ -1,0 +1,19 @@
+<html>
+    <script>
+        // optimize memory ,4.9 MB
+        let bytes = new Uint8Array(1000000);
+        // dynamic array -more alocated in memory -7.8 MB
+        // let bytes = new Array(1000000);
+
+        let buffer = new ArrayBuffer(1024*1024);
+        console.log('Buffer byte length', buffer);
+
+        bytes = new Uint8Array(buffer);
+        console.log('Buffer Uint8Array length', bytes);
+
+        let a = new Int32Array(buffer);
+        a[0] =100;
+        console.log('Buffer Int32Array length', a, "0 index :" ,bytes[0]);
+
+    </script>
+</html>
