@@ -12,6 +12,7 @@
         console.log('Buffer Uint8Array length', bytes);
 
         let a = new Int32Array(buffer);
+        // bytes [0] also update to 100 because of buffer
         a[0] =100;
         console.log('Buffer Int32Array length', a, "0 index :" ,bytes[0]);
 
