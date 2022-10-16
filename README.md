@@ -20,7 +20,8 @@ Set - use to remove duplicated values
 
 Map - mainly use in the case where get value by key
 
-Stack - save reference,make only push and pop 
+Stack 
+      - save reference,make only push and pop 
 
       - fuction call time save primitive to slack
 
@@ -33,6 +34,17 @@ Garbage occur - garbage occurs in heap
 Garbage - not usable in memory called garbage, not usable value having
 
 Garbage Collection - remove unusabel object in heap
+
+WeakMap and WeakSet - To avoid garbage collect instead of using map and set
+
+Weak Reference -key in WeakMap and WeakSet
+
+Size in dynamic variable - biggest size alocated 8 bytes
+
+Typed Array(Uint8Array,Int32Array,etc.) - size in dynamic variable to adjust memory and cpu -Optimizing
+
+Buffer - can use typed array and use same memory location
+
 
 --------------------------------------------------------------------------------------
 
