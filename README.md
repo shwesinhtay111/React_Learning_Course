@@ -66,3 +66,31 @@ ref : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expr
 
 --------------------------------------------------------------------------------------
 
+# D28
+Standard Library2
+
+Regular expression :
+Search 
+Match
+Replace
+Split
+exec
+
+Dates and Times
+
+Client server transfer - need to send with miliseconds, should not parse in date
+
+UTC timezone : mostly save with UTC in db,clent use their timezone
+
+If need to use datetime - use https://momentjs.com/
+
+JSON -simple to use and popular
+
+Serialization - also called ad mrshalling or even pickling
+
+Why to serialize - can't sent to obj and need to change to string,cause of need to sent agreed format
+
+
+
+
+
