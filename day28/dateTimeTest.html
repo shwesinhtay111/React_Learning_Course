@@ -1,0 +1,22 @@
+<html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" ></script>
+    <script>
+        
+        let date = new Date();
+        console.log("Date:",date)
+        let format =new Date(2022,6,24,16,50)
+        console.log("Format Date:",date)
+
+        // Midnight in England, January 1, 2100
+        let century = new Date(Date.UTC(2100,0,1))
+        console.log("UTC time :", century)
+
+        let time = date.getTime();
+        console.log("Time :", time);
+        let mDate = moment(date).add(2,'day');
+        console.log("plus two days: ", mDate.format('YYYY-MM-DD'))
+        let dateStr = mDate.format('YYYY-MM-DD');
+        mDate = moment(dateStr,'YYYY-MM-DD');
+        console.log("Moment date :",mDate.format("YYYY MMM DD"));
+    </script>
+</html>

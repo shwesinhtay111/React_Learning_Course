@@ -3,5 +3,8 @@
         let str = "apple ,orange \n,banana";
         let arr = str.split(/\s*,\s*/);
         console.log("arr", arr);
+
+        let arrtest = str.split(new RegExp("\s*,\s*","ugi"));
+        console.log("arrtest", arrtest);
     </script>
 </html>
