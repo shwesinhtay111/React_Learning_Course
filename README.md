@@ -92,5 +92,25 @@ Why to serialize - can't sent to obj and need to change to string,cause of need 
 
 
 
+# D 29
+Asynmous
+
+CPU - Fastest
+
+Memory -Middle Fast
+
+I/O -Lowest Fast
+
+Block -Not currently running state,give to ready running state for their cpc place 
+
+Process 1 (cpu)-> IO(io time long) -> Block(give cpu place to process 2)
+
+Process 2(Process 1's cpc place run)
+
+
+Waiting - wait to run cpu
+
+
+
 
 
