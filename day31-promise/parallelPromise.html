@@ -1,13 +1,24 @@
 <html>
-    <script>
-        let url = "https://jsonplaceholder.typicode.com/todos/1";
-        let url2 = "https://jsonplaceholder.typicode.com/todos/2";
-        let urls =[url,url2];
-        // get promise array
-        let promises = urls.map(url => fetch(url).then(response=>response.text()));
-        Promise.all(promises).then(data=>console.log("all data",data))
+<script>
+    let url = "https://jsonplaceholder.typicode.com/todos/1";
+    let url2 = "https://jsonplaceholder.typicode.com/todos/2";
+    // wrong url
+    let url3 = "https://3jsonplaceholder.typicode.com/todos/2";
+    let urls = [url, url2, url3];
+    // get promise array
+    let promises = urls.map(url => fetch(url).then(response => response.text()));
+    // both finisehd want to do next step
+    // if one failed all will fail
+    Promise.all(promises).then(data => console.log("all data", data))
+    // show failed success by status
+    Promise.allSettled(promises).then(data => console.log("all allSettled data", data))
+    //  if one success, only this will success -first success one
+    Promise.any(promises).then(data => console.log("all any data", data))
 
-        // both finisehd want to do next step
+    let promise2 = urls.map(url => fetch(url));
+    //  if fail or success, first one will return
+    Promise.race(promise2).then(data => console.log("all race data", data))
 
-    </script>
+</script>
+
 </html>
