@@ -1,0 +1,17 @@
+<html>
+    <script>
+        function getData(callback){
+            console.log("Get data called");
+            setTimeout(()=>{
+                callback(100);
+            },2000)
+            // return 100;
+        }
+        function callback(data){
+            console.log("Callback", data);
+        }
+        getData(callback);
+        // console.log("x", x);
+
+    </script>
+</html>
