@@ -111,6 +111,28 @@ Process 2(Process 1's cpc place run)
 Waiting - wait to run cpu
 
 
+# D30
+
+Callbacks - function, not immediately run, sometime will run
+
+why need callbacks - process not work order, block state have in middle to process I/O state,callback need to run again I/O delay tasks 
+
+Promise - To solve callback hell-complex with nested callbacks
+
+Chaining in promise - call by then().then method
+
+Fetch API -main is not use jquery, work process - ajax call and get  promise
+
+then() [flatMap]- run after data ready
+
+resolve - success,result get in then() stage, return promise 
+
+reject -error
+
+catch - run in error case,first case(then) must be error and catch can run
+
+
+
 
 
 
