@@ -1,0 +1,17 @@
+<html>
+<script>
+    let promise = Promise.resolve(100);
+    let add1 = (x) => x + 1;
+    let double = (x) => x * 2;
+    let promise2 = promise.then(add1).then(double);
+
+    // two layers promise
+    // let promise3 = promise.then(add1).then(x=>new Promise.resolve(double));
+    // then return promise
+    promise2.then(x=>console.log(x))
+    console.log("Promise", promise);
+    // promise3.then(x=>console.log(x))
+    // console.log("two layer promise Promise", promise);
+</script>
+
+</html>
