@@ -131,6 +131,11 @@ reject -error
 
 catch - run in error case,first case(then) must be error and catch can run
 
+# D 31
+then(flatMap) - is used to run after real data get
+
+promise.all promise - if one is failed, all will fail.
+
 
 
 
