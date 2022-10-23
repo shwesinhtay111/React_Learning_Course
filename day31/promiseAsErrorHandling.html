@@ -1,0 +1,14 @@
+<html>
+    <script>
+        function div(a,b){
+            if(b == 0){
+                return Promise.reject("Division is zero!");
+            }
+            else{
+                return Promise.resolve(a/b);
+            }
+        }
+        div(10,2).then(result => console.log("Pormise result :",result));
+        div(10,0).then(result => console.log("Pormise result :",result),error=>console.log("Error:",error));
+    </script>
+</html>
