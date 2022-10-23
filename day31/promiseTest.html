@@ -1,5 +1,7 @@
 <html>
     <script>
+
+        // Callback code
         function getData(callback){
             console.log("Get data called");
             setTimeout(()=>{
@@ -12,6 +14,19 @@
         }
         getData(callback);
         // console.log("x", x);
+
+
+        // Promise code
+
+        function getDataPromise(){
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve(100);
+                },2000)
+            });
+            
+        }
+        getDataPromise().then(x=>console.log("get data promise",x));
 
     </script>
 </html>
