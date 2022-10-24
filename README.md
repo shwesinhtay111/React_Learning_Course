@@ -136,6 +136,17 @@ then(flatMap) - is used to run after real data get
 
 promise.all promise - if one is failed, all will fail.
 
+async awiat : work also by promise
+
+await : call fetch ,get promise, wait promise.then means await
+
+        return promise type,so can do with .then() method
+
+        must be used in await keyword,and can only by used with async funtion
+
+
+
+
 
 
 
