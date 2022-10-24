@@ -146,6 +146,14 @@ await : call fetch ,get promise, wait promise.then means await
 
 
 
+# D32
+
+Meta program - written meta program called meta programming
+
+             - code modifed, make intercept
+
+             - used in framework code, more powerful
+
 
 
 
