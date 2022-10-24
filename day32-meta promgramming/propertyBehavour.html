@@ -1,0 +1,29 @@
+<html>
+    <script>
+        let obj = {
+            display() {
+                console.log("Display");
+            },
+            hello() {
+                console.log("Hello");
+            }
+        }
+         // change property update
+         Object.defineProperty(obj,"age",{
+            value: 37,
+            writable : false,
+            configurable : false,
+            enumerable : false
+        });
+        console.lgo("Obje", obj.age);
+        obj.age = 30;
+        for(let prop in obj){
+            console.log("Propery", prop);
+
+        }
+
+        delete obj.age;
+        console.lgo("Obj", obj);
+
+    </script>
+</html>
