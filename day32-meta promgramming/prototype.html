@@ -1,0 +1,13 @@
+<html>
+    <script>
+         let model = {
+            name : "TK",
+            age : 34
+        };
+        // parent type
+        console.log("prototype",Object.getPrototypeOf(model))
+
+        let obj = Object.create(model);
+        console.log("Prototype after",Object.getPrototypeOf(obj))
+    </script>
+</html>
