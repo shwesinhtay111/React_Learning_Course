@@ -1,0 +1,28 @@
+<html>
+    <script>
+        let model = {
+            name : "TK",
+            age : 34
+        };
+        console.log("IsExtensible", Object.isExtensible(model));
+        Object.preventExtensions(model);
+        console.log("IsExtensible",Object.isExtensible(model));
+
+        let obj = {}
+        obj.__proto__ = model;
+        console.log("after :",obj)
+        console.log("reflect :",Reflect.isExtensible(model))
+
+        // seal can make to restrict new property adding
+        Object.seal(model);
+        model.newPro = 200;
+        console.log("model seal", model)
+
+
+        // freeze can makes to immutable
+        Object.freeze(model);
+        model.age = 200;
+        console.log("Model freeze", model);
+    </script>
+ 
+</html>
