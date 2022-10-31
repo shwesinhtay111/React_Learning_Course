@@ -1,0 +1,18 @@
+<html>
+    <script>
+        function display(a,b){
+            console.log("A",a,"B",b);
+        }
+        Reflect.apply(display,null,["ONE","Two"]);
+
+        class Human{
+            constructor(name){
+                console.log("Human constructor name",name);
+                this.name = name;
+
+            }
+        }
+        let obj = Reflect.construct(Human,["SSH"]);
+        console.log("Obj",obj);
+    </script>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<button id="btnLoad" type="button">Load</button>
+<div id="time"></div>
+<script>
+    let data = "Data inside main staring"
+    function importJS(url) {
+        return new Promise((resolve, reject) => {
+            let script = document.createElement("script");
+            script.onload = () => {
+                resolve();
+                console.log("on load");
+            }
+            script.onerror = () => {
+                reject();
+            };
+            document.head.append(script);
+        })
+    }
+    document.getElementById("btnLoad").addEventListener("click", () => {
+        importJS("lib.js").then(() => {
+            hello();
+        });
+    })
+</script>
+
+</html>
