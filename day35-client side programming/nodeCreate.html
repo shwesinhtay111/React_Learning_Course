@@ -1,0 +1,41 @@
+<html>
+
+<body>
+    <div id="container">
+        original
+    </div>
+    <div id="another">another</div>
+    <button id="btnRemove" type="button">remove h1 button</button>
+    <button id="btnReplace" type="button">Repalce button</button>
+</body>
+<script>
+    let container = document.getElementById("container");
+    let h1Node = document.createElement("h1");
+    h1Node.textContent = "Hello h1";
+    container.after(h1Node);
+
+    let h2Node = document.createElement("h2");
+    h2Node.textContent = "Hello h2";
+    container.before(h2Node);
+
+    let h3Node = document.createElement("h3");
+    h3Node.textContent = "Hello h3";
+    container.prepend(h3Node);
+
+
+    let h4Node = document.createElement("h4");
+    h4Node.textContent = "Hello h4";
+    container.append(h4Node);
+
+    document.getElementById("btnRemove").addEventListener("click", () => {
+        h1Node.replaceWith();
+    })
+
+    document.getElementById("btnReplace").addEventListener("click", () => {
+        let replace = document.createElement("h1");
+        replace.textContent = "Repalce h1";
+        h1Node.replaceWith(replace);
+    })
+</script>
+
+</html>
