@@ -7,6 +7,9 @@ var users = require('./../controller/User');
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
+
+router.post('/', users.saveUser);
+
 router.get('/hello',users.hello);
 router.get('/:userId', function(req,res,next){
   console.log('/users/:userId');
