@@ -11,6 +11,7 @@ const { db } = require("./config/database");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+var movieRouter = require('./routes/movies');
 
 var app = express();
 
@@ -38,6 +39,7 @@ mongoose
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
+app.use("/movies", movieRouter);
 // app.use('./api-docs',swaggerUi.serve,swaggerUi.setup(swaggerDocument));
 
 // catch 404 and forward to error handler
