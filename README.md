@@ -153,6 +153,43 @@ Meta program - written meta program called meta programming
              - code modifed, make intercept
 
              - used in framework code, more powerful
+             
+ #44 
+ React
+ 
+UI element called component
+
+component can be reused
+
+yarn - more rapid than npm,install dependency package in parallel
+
+jsx - javascript html, must have both start tag and end tag,must give name with capital letter
+
+virtual dom - just plain javascript object
+
+JSX -> babel compiler -> createElement -> Virtual DOM(JSON) -> work with react render
+
+html tag must be small letter
+
+DOM diffing -update only differences depend on existing and new,so virtual DOM is fast
+
+render - get vitual dom and render physical dom or render mobile ui in react native
+
+componet -class componet and function componet
+
+class component -can use hook,life cycle
+
+property should be read only
+
+change value - use state
+
+accept input - use property
+
+
+
+
+
+
 
 
 
