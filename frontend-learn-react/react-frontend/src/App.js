@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import HellWorld from './components/HelloWorld';
 import Hello from './components/function_component/Hello';
 import Post from './components/Post';
 import Counter from './components/Counter';
+import Greeting from './components/function_component/Greeting';
+import ListDemo from './components/ListDemo';
+import FormDemo from './components/FormDemo';
 
 function App() {
   let obj = {
@@ -32,7 +36,11 @@ let post ={
         <Hello />
         <Post post={post} />
         <Counter initialVlaue={1}/>
+        <Greeting isLoggedIn={false} />
+        <ListDemo />
+        <FormDemo />
       </header>
+      
     </div>
   );
 }
