@@ -185,6 +185,29 @@ change value - use state
 
 accept input - use property
 
+# D 45
+componentDidMount - run only once,use in timer,web socket ,after this stage dom is inserted
+
+
+componentWillUnmount - run before dom deletion
+
+jquery - use direct dom
+
+react - use virtual dom
+
+e.preventDefault() -event submitted by react,can not same in other system to all,it is ok that is not cared by developers
+
+use event to handle life cycle event 
+
+JSX -accepts expression only
+
+use && for conditional
+
+if don't want to render, return null
+
+map - need key,key should not be index, should use backend primary key as key.
+
+
 
 
 
